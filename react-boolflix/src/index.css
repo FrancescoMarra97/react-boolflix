@@ -35,3 +35,7 @@ footer {
 main {
     min-height: calc(100vh);
 }
+
+.badge {
+    font-size: 15px;
+}
