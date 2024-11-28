@@ -1,11 +1,13 @@
-import SearchBar from "./SearchBar"
+import Card from "./Card"
 
 
-export default function AppMain() {
+export default function AppMain({ movies, tvShows }) {
 
     return (
         <>
-            <SearchBar></SearchBar>
+            <main>
+                <Card movies={movies} tvShows={tvShows}></Card>
+            </main>
         </>
     )
 }

@@ -1,0 +1,37 @@
+header {
+    background-color: black;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+body {
+    background-color: #333;
+
+}
+
+li {
+    padding: 1rem;
+    list-style: none;
+    color: black
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    img {
+        width: 200px;
+    }
+}
+
+main {
+    min-height: calc(100vh);
+}
