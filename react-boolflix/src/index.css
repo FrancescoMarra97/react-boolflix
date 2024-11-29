@@ -2,6 +2,7 @@ header {
     background-color: black;
     padding: 1rem 2rem;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 body {
@@ -26,6 +27,7 @@ footer {
     color: white;
     padding: 1rem 2rem;
     width: 100%;
+    margin-top: 1rem;
 
     img {
         width: 200px;
@@ -38,4 +40,9 @@ main {
 
 .badge {
     font-size: 15px;
+}
+
+.card-body {
+    background-color: black;
+    color: white;
 }

@@ -5,7 +5,7 @@ export default function AppFooter() {
             <footer>
                 <div className="container d-flex justify-content-around align-items-center">
                     <p>&copy; {new Date().getFullYear()}</p>
-                    <img src="./public/img/logoBoolflix.png" />
+                    <img src="/img/logoBoolflix.png" />
                 </div>
             </footer>
 
