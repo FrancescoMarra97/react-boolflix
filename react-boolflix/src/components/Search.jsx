@@ -1,3 +1,5 @@
+import { FaSearch } from "react-icons/fa";
+
 
 
 export default function Search({ query, onHandleClick, onHandleInput }) {
@@ -17,9 +19,12 @@ export default function Search({ query, onHandleClick, onHandleInput }) {
                     onChange={onHandleInput}
 
                 />
-                <button onClick={onHandleClick}>Cerca</button>
+                <button onClick={onHandleClick}>
+                    <FaSearch />
+                </button>
 
             </div>
         </>
+
     )
 }
