@@ -1,9 +1,27 @@
+import { useContext } from "react";
+import { GlobalContext } from "../context/GlobalContext";
 import ReactCountryFlag from "react-country-flag"
 
-
-
-export default function Card({ movies, tvShows }) {
+export default function Card() {
     const BASE_IMAGE_URL = "https://image.tmdb.org/t/p/w342";
+    const { movies, tvShows } = useContext(GlobalContext);
+    function star(num) {
+        const newNum = Math.ceil(num / 2)
+        if (newNum == 0) {
+            return ''
+        } else if (newNum == 1) {
+            return '🌟'
+        } else if (newNum == 2) {
+            return '🌟🌟'
+        } else if (newNum == 3) {
+            return '🌟🌟🌟'
+        } else if (newNum == 4) {
+            return '🌟🌟🌟🌟'
+        } else if (newNum == 5) {
+            return '🌟🌟🌟🌟🌟'
+        }
+    }
+
 
     return (
         <>
@@ -29,7 +47,7 @@ export default function Card({ movies, tvShows }) {
                                             style={{ width: 30, height: 20, marginLeft: 5 }}
                                         />
                                     </p>
-                                    <p className="card-text"><strong>Voto:</strong>{movie.vote_average}</p>
+                                    <p className="card-text"><strong>Voto:</strong>{star(movie.vote_average)}</p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +75,7 @@ export default function Card({ movies, tvShows }) {
                                             style={{ width: 30, height: 20, marginLeft: 5 }}
                                         />
                                     </p>
-                                    <p className="card-text"><strong>Voto:</strong> {tvShow.vote_average}</p>
+                                    <p className="card-text"><strong>Voto:</strong> {star(tvShow.vote_average)}</p>
                                 </div>
                             </div>
                         </div>

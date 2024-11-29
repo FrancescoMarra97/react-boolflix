@@ -46,3 +46,24 @@ main {
     background-color: black;
     color: white;
 }
+
+input {
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
