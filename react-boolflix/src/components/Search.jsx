@@ -19,7 +19,7 @@ export default function Search({ query, onHandleClick, onHandleInput }) {
                     onChange={onHandleInput}
 
                 />
-                <button onClick={onHandleClick}>
+                <button onClick={onHandleClick} >
                     <FaSearch />
                 </button>
 

@@ -10,6 +10,8 @@ export const GlobalProvider = ({ children }) => {
         setQuery(e.target.value);
     };
     const handleClick = () => {
+        console.log("pulsante cliccato");
+
         const api_key = import.meta.env.VITE_MOVIE_DB_API_KEY
 
 
