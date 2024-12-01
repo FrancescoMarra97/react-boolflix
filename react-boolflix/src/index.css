@@ -94,25 +94,30 @@ main {
 }
 
 input {
-    border-radius: 25px;
     border: 1px solid #ccc;
+    border-radius: 25px;
     padding: 10px 20px;
     width: 100%;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+
+
+}
+
+#search-container {
+    position: relative;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    background-color: transparent;
+    color: #333;
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-
-
-
+    position: absolute;
+    right: 0;
+    transition: border-color 0.3s ease;
 }
 
 i {

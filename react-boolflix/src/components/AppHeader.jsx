@@ -7,7 +7,7 @@ export default function AppHeader({ query, onHandleClick, onHandleInput }) {
         <>
             <header>
                 <div className="d-flex justify-content-between" >
-                    <img src="/img/logoBoolflix.png" />
+                    <a href="/">  <img src="/img/logoBoolflix.png" /></a>
                     <Search onHandleClick={onHandleClick} onHandleInput={onHandleInput} query={query}></Search>
                 </div>
             </header >
